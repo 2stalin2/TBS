@@ -1,5 +1,4 @@
 package testcases;
-
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.By;
@@ -9,23 +8,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import dev.failsafe.internal.util.Assert;
 import tbspages.Login_elements_objects;
 
 public class Login {
 	WebDriver driver = null;
 	Login_elements_objects elements = null;
-	private Object errorMessage;
+	
 	
 
 	@BeforeTest
 	public void setup() {
 
 		System.setProperty("webdriver.chrome.driver","driver/chromedriver.exe");		
-//        ChromeOptions options = new ChromeOptions();
+//    ChromeOptions options = new ChromeOptions();
 //		options.addArguments("--disable-notifications");
-//		options.addArguments("--remote-allow-origins=*");
+//	options.addArguments("--remote-allow-origins=*");
 //		driver = new ChromeDriver(options);		
 		driver = new ChromeDriver();
 		elements = new Login_elements_objects(driver);
