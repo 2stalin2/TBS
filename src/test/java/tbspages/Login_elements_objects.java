@@ -9,6 +9,7 @@ public class Login_elements_objects {
 	By username = By.xpath("//input[@placeholder='Email']");
 	By password = By.xpath("//input[@placeholder='Password']");
 	By continuebutton = By.xpath("//button[@type='submit']");
+	
 
 	public Login_elements_objects(WebDriver driver) {
 		this.driver = driver;

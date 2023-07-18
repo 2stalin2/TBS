@@ -1,19 +1,23 @@
 package testcases;
 
 import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import dev.failsafe.internal.util.Assert;
 import tbspages.Login_elements_objects;
 
 public class Login {
 	WebDriver driver = null;
 	Login_elements_objects elements = null;
+	private Object errorMessage;
+	
 
 	@BeforeTest
 	public void setup() {
@@ -37,8 +41,8 @@ public class Login {
 		elements.continuebutton();
 		Thread.sleep(5000);
 		// Check if error message is displayed
-		WebElement validationMessage = driver.findElement(By.cssSelector("div.message-div"));
-		assertEquals(validationMessage.getText(), "User is not Authorized");
+		WebElement validationMessage = driver.findElement(By.cssSelector("div[class='message-div']span"));		
+		assertEquals(validationMessage.getText(), "User is not Authorized");		
 		Thread.sleep(5000);
 	}
 
@@ -51,7 +55,7 @@ public class Login {
 		elements.continuebutton();
 		Thread.sleep(5000);
 		// Check if error message is displayed
-		WebElement validationMessage = driver.findElement(By.cssSelector("div.message-div"));
+		WebElement validationMessage = driver.findElement(By.cssSelector("div[class='message-div']span"));		
 		assertEquals(validationMessage.getText(), "User is not Authorized");
 		Thread.sleep(5000);
 	}

@@ -8,7 +8,6 @@
           <include name="invalidpasswd"/>
           <include name="launchurl"/>
           <include name="tearDownTest"/>
-          <include name="bumodule"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testcases.Login -->
