@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-18T19:45:05 IST" name="Suite" finished-at="2023-07-18T19:45:51 IST" duration-ms="45167">
+    <groups>
+    </groups>
+    <test started-at="2023-07-18T19:45:05 IST" name="Test" finished-at="2023-07-18T19:45:51 IST" duration-ms="45167">
+      <class name="testcases.Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Login@2892dae4]" started-at="2023-07-18T19:45:05 IST" name="setup" finished-at="2023-07-18T19:45:07 IST" duration-ms="1903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="bumodule()[pri:0, instance:testcases.Login@2892dae4]" started-at="2023-07-18T19:45:07 IST" name="bumodule" finished-at="2023-07-18T19:45:19 IST" duration-ms="11726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bumodule -->
+        <test-method signature="invalidpasswd()[pri:0, instance:testcases.Login@2892dae4]" started-at="2023-07-18T19:45:19 IST" name="invalidpasswd" finished-at="2023-07-18T19:45:35 IST" duration-ms="15554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidpasswd -->
+        <test-method signature="launchurl()[pri:0, instance:testcases.Login@2892dae4]" started-at="2023-07-18T19:45:35 IST" name="launchurl" finished-at="2023-07-18T19:45:50 IST" duration-ms="15638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchurl -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.Login@2892dae4]" started-at="2023-07-18T19:45:50 IST" name="tearDownTest" finished-at="2023-07-18T19:45:51 IST" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- testcases.Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
