@@ -9,7 +9,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import tbspages.Login_elements_objects;
 
 public class Login {
@@ -19,14 +18,14 @@ public class Login {
 	@BeforeTest
 	public void setup() {
 
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Premkumar\\Desktop\\eclipse\\chromedriver_win32\\chromedriver.exe");
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-notifications");
-		options.addArguments("--remote-allow-origins=*");
-		driver = new ChromeDriver(options);
+		System.setProperty("webdriver.chrome.driver","driver/chromedriver.exe");		
+//        ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--disable-notifications");
+//		options.addArguments("--remote-allow-origins=*");
+//		driver = new ChromeDriver(options);		
+		driver = new ChromeDriver();
 		elements = new Login_elements_objects(driver);
-		// driver = new ChromeDriver();
+		
 	}
 
 	@Test
