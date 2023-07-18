@@ -15,12 +15,7 @@
         <artifactId>selenium-java</artifactId>
         <version>3.141.59</version>
     </dependency>
-    <dependency>
-    	<groupId>lamdademo</groupId>
-    	<artifactId>lamdademo</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-    </dependency>
-  </dependencies>
+      </dependencies>
 <build>
     <plugins>
       <!-- Existing plugins -->
